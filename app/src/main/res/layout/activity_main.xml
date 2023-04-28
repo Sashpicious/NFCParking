@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey"
+    android:layout_margin="0dp">
+
+    <TextView
+        android:id="@+id/text_welcome_nfc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Please select your card!"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <View
+        android:id="@+id/divider_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_welcome_nfc"
+        android:layout_marginTop="15dp"
+        android:background="@color/DarkGray" />
+
+    <ImageButton
+        android:id="@+id/Card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_welcome_nfc"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/city_parking_card" />
+    <View
+        android:id="@+id/divider_name2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Card1"
+        android:layout_marginTop="15dp"
+        android:background="@color/DarkGray" />
+
+    <TextView
+        android:id="@+id/user_type"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tvborder"
+        android:drawableLeft="@drawable/membership"
+        android:gravity="center"
+        android:text="User Type:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entry_status"
+        android:layout_below="@+id/user_type"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tvborder"
+        android:drawableLeft="@drawable/car"
+        android:gravity="center"
+        android:text="Entry Status:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/entry_time"
+        android:layout_below="@+id/entry_status"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tvborder"
+        android:drawableLeft="@drawable/time"
+        android:gravity="center"
+        android:text="Entry Time:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/DimGray"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        />
+
+
+
+</RelativeLayout>

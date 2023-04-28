@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:layout_margin="0dp"
+    android:background="@color/grey"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Welcome to NFC Parking!"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/text_welcome"
+            android:src="@drawable/person" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePic"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tvborder"
+            android:drawableLeft="@drawable/username"
+            android:gravity="center"
+            android:text="Name: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Email: "
+            android:textSize="20dp"
+            android:background="@drawable/tvborder"
+            android:drawableLeft="@drawable/email"
+            android:layout_below="@+id/text_name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_phone_number"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Phone Number:"
+            android:textSize="20dp"
+            android:background="@drawable/tvborder"
+            android:drawableLeft="@drawable/phone"
+            android:layout_below="@+id/text_email"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_number_plate"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_phone_number"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tvborder"
+            android:drawableLeft="@drawable/car"
+            android:gravity="center"
+            android:text="Number Plate:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_card_number"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Card Number:"
+            android:textSize="20dp"
+            android:background="@drawable/tvborder"
+            android:drawableLeft="@drawable/card"
+            android:layout_below="@+id/text_number_plate"
+            android:textStyle="bold"/>
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/DimGray"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/menu_navigation"
+            />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "451049950631",
+    "firebase_url": "https://nfcapp-cd56c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nfcapp-cd56c",
+    "storage_bucket": "nfcapp-cd56c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451049950631:android:a799eedd20c0e6cd34ba82",
+        "android_client_info": {
+          "package_name": "com.example.nfcparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451049950631-qcebslnqjuqghri3dkn3m0e40sbpamrv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nfcparking",
+            "certificate_hash": "b5ab19ff68936f961d246415d9e2a9af14ac9ee7"
+          }
+        },
+        {
+          "client_id": "451049950631-3qoc4aiceieo2cfik7l7gmd0215nu9v3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjKktvsosvSKU2X4vdCUd4mLFMEdVxhKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451049950631-3qoc4aiceieo2cfik7l7gmd0215nu9v3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
